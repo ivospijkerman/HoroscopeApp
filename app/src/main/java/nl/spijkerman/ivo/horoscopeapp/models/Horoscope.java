@@ -29,4 +29,9 @@ public class Horoscope {
     public String getZodiacSign() {
         return zodiacSign;
     }
+
+    @Override
+    public String toString() {
+        return zodiacSign;
+    }
 }
