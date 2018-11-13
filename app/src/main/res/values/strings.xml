@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HoroscopeApp</string>
+    <string name="activity_main_header_text">Please select your zodiac sign below</string>
 </resources>
