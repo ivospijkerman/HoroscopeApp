@@ -1,7 +1,5 @@
 package nl.spijkerman.ivo.horoscopeapp.models;
 
-import android.graphics.drawable.Drawable;
-
 public class Horoscope {
     private final String zodiacSign;
     private final String forecast;

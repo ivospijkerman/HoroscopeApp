@@ -1,18 +1,14 @@
 package nl.spijkerman.ivo.horoscopeapp.activities;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import nl.spijkerman.ivo.horoscopeapp.R;
-import nl.spijkerman.ivo.horoscopeapp.controller.HoroscopeController;
 import nl.spijkerman.ivo.horoscopeapp.models.Horoscope;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class MainActivity extends AppCompatActivity {
     private ListView listViewZodiacSigns;
     private ArrayAdapter<Horoscope> listViewZodiacSignsAdapter;
 
@@ -23,21 +19,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
         // </auto-generated>
 
-        listViewZodiacSigns = findViewById(R.id.list_view_zodiac_signs);
-        listViewZodiacSignsAdapter = new ArrayAdapter<>(
-                this,
-                R.layout.simple_list_item,
-                HoroscopeController.getAll()
-        );
 
-        listViewZodiacSigns.setAdapter(listViewZodiacSignsAdapter);
-        listViewZodiacSigns.setOnItemClickListener(this);
-    }
-
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra(DetailActivity.EXTRA_ZODIAC_ID, id);
-        startActivity(intent);
     }
 }

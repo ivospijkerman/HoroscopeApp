@@ -15,8 +15,8 @@ public class HoroscopeController {
             new Horoscope("Scorpio", R.drawable.scorpio),
             new Horoscope("Sagittarius", R.drawable.sagittarius),
             new Horoscope("Capricorn", R.drawable.capricorn),
-            new Horoscope("Aquarius", R.drawable.aquarius),
-            new Horoscope("Pisces", R.drawable.pisces)
+            new Horoscope("Aquarius", R.drawable.aquarius)
+            // TODO add pisces
     };
 
     public static Horoscope[] getAll() {
