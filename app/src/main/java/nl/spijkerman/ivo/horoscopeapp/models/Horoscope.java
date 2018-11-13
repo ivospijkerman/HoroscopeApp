@@ -1,9 +1,11 @@
 package nl.spijkerman.ivo.horoscopeapp.models;
 
+import android.graphics.drawable.Drawable;
+
 public class Horoscope {
-    private String zodiacSign;
-    private String forecast;
-    private int imageResourceId;
+    private final String zodiacSign;
+    private final String forecast;
+    private final int imageResourceId;
 
     public Horoscope(String zodiacSign,
                      int imageResourceId) {
