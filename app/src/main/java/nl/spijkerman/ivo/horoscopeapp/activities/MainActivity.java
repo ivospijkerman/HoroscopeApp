@@ -1,7 +1,9 @@
-package nl.spijkerman.ivo.horoscopeapp;
+package nl.spijkerman.ivo.horoscopeapp.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import nl.spijkerman.ivo.horoscopeapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
